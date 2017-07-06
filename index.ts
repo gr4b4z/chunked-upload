@@ -26,7 +26,8 @@ export namespace ChunkedUpload {
           }
           return Promise.resolve();
         },exc=>{
-          console.error(exc);
+          console.error(exc.statusCode);
+          console.error(exc.body);
           return Promise.reject(exc.name);
         }
           );

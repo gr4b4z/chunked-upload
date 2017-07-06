@@ -1,6 +1,6 @@
 {
   "name": "chunked-upload",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Chunked Upload is a script that provide ability to upload large files in chunks",
   "main": "index.js",
   "types": "index.d.ts",
