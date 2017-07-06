@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Chunked Upload is a script that provide ability to upload large files in chunks",
   "main": "index.js",
+  "types":"index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
