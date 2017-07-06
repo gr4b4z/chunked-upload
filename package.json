@@ -1,0 +1,31 @@
+{
+  "name": "chuked-upload",
+  "version": "0.0.1",
+  "description": "Chunked Upload is a script that provide ability to upload large files in chunks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gr4b4z/chunked-upload.git"
+  },
+  "keywords": [
+    "chunk",
+    "upload",
+    "large",
+    "files"
+  ],
+  "author": "Sylwester Grabowski",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gr4b4z/chunked-upload/issues"
+  },
+  "homepage": "https://github.com/gr4b4z/chunked-upload#readme",
+  "dependencies": {
+    "progress": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.8"
+  }
+}
