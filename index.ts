@@ -25,7 +25,11 @@ export namespace ChunkedUpload {
             return processTheStream(nextChunk, chunk);
           }
           return Promise.resolve();
-        });
+        },exc=>{
+          console.error(exc);
+          return Promise.reject(exc.name);
+        }
+          );
 
 
     }
@@ -40,7 +44,7 @@ export namespace ChunkedUpload {
       total: fileInfo.size
     });
 
-    return new Promise(resolve => {
+    return new Promise((resolve,reject) => {
       rs.on('readable', () => {
         let nextChunk = () => {
           var chunk = rs.read(chunkLength)
@@ -58,6 +62,8 @@ export namespace ChunkedUpload {
             setTimeout(function () {
               resolve(d);
             }, 10);
+          },rj=>{
+            reject("Could not connect to the server")
           });
       });
     });
